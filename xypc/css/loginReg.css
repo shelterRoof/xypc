@@ -1,0 +1,309 @@
+h2,h3,h4,h5,h6{
+	font-weight: normal;
+}
+/*遮罩层*/
+.detailCover{
+	top: 0;
+	left: 0;	
+	z-index: 2;
+	width: 100%;
+	height: 100%;	
+	position: fixed;
+	display: none;
+	background-color: rgba(0,0,0,.5);
+}
+.loSinWrap{
+	width: 530px;
+	height: 447px;
+	display: block;
+	border-radius: 4px;
+	margin:230px auto 0;
+	padding:40px 30px 0 30px;	
+	background-color:#FFF;
+}
+.registWrap,.wordWrap{
+	color:#333;
+	width: 100%;
+	height: 66px;
+}
+.registWrap h2,.wordWrap h2{
+	width:46px;
+	height:30px;
+	float:left;
+	display: block;
+	cursor: pointer;
+	font-size: 18px;
+	margin-right: 40px;
+	font-weight: normal;
+}
+.resetPassword{
+	height: 36px;
+	font-size: 18px;
+	display: none;
+}
+.registWrap .present,.wordWrap .present{
+	color:#6C45AF;
+	border-bottom:2px solid #6C45AF;
+}
+.inputLogWrap{
+	width: 100%;
+	display:block;
+	overflow: hidden;
+}
+.inputRegWrap,.inputResWrap{
+	display: none;
+}
+.inputLogWrap h3,.inputRegWrap h4,.inputResWrap h4,.message{
+	height: 47px;
+	width: 100%;
+	font-size: 14px;
+	border-radius:4px;
+	padding-left: 20px;
+	margin-bottom: 20px;
+	border: 1px solid #f7f7f7;
+}
+.inputLogWrap h3 span,.inputRegWrap h4 span,.inputResWrap h4 span{
+	width: 47px;
+	height: 100%;
+	float: left;
+	color: #A0A0A0;
+	line-height:47px;
+
+}
+.inputLogWrap h3 input,.inputRegWrap h4 input,.inputResWrap h4 input{
+	color: #333;
+	width: 344px;
+	height: 100%;
+	float:left;
+	font-size: 14px;
+	line-height:47px;
+	padding-left: 62px;	
+	background-color: #fff;
+	font-family: "microsoft yahei";
+}
+.inputRegWrap h4 .code,.inputResWrap h4 .code{	
+	width:80px;
+	float: left;
+	height: 30px;
+	color:#6C45AF;
+	cursor: pointer;
+	margin-top: 8px;
+	line-height: 30px;
+	border-radius: 4px;
+	text-align: center;	
+	border: 1px solid #6C45AF;
+}
+.inputRegWrap h4 .code:hover,.inputResWrap h4 .code:hover{
+	background-color: #f0ecf7;
+}
+.inputRegWrap h4 .shortWid,.inputResWrap h4 .shortWid{
+	width: 308px;
+}
+.loginBtn,.registBtn,.resLoginBtn,.subBtnOrder{
+	color:#fff;
+	width: 100%;
+	height:47px;
+	cursor: pointer;
+	font-size: 16px;
+	border-radius: 4px;
+	margin-top: 20px;
+	background-color:#6C45AF;
+	font-family: "microsoft yahei";
+}
+.forgotPassword{
+	color: #999;
+	width: 100%;
+	cursor: pointer;
+	margin-top: 20px;
+	font-size: 16px;
+	text-align: right;	
+}
+/*预约看房*/
+.orderWrap{
+	width: 530px;
+	display: none;
+	border-radius:4px;
+	margin:230px auto 0;
+	background-color:#FFF;
+	padding:40px 30px 0 30px;
+}
+.wordWrap h2{
+	width:110px;
+	display: block;
+}
+.checkSee{
+	display: none;
+}
+.writeWrap h4{
+	width: 100%;
+	height: 48px;
+	color:#DCDCDC;
+	line-height:48px;
+	margin-bottom:20px;
+	border-radius: 4px;
+	border: 1px solid #F7F7F7;
+}
+.writeWrap h4 p{
+	float: left;
+	height:26px;
+	color: #333;
+	font-size: 14px;
+	cursor: pointer;
+	padding-left: 6px;
+	line-height: 26px;
+    margin-top: 10px;
+	margin-right:20px;
+	border-radius: 4px;
+	border: 1px solid #D1D1D1;
+	background: url(../images/details/icon_arrow_pre.png) no-repeat top right;
+}
+.writeWrap h4 .week{
+	width:194px;
+	position: relative;
+	
+}
+.writeWrap h4 .afterChice{
+	width: 112px;
+}
+.writeWrap h4 span{
+	color: #A0A0A0;
+	width: 108px;
+	float: left;
+	line-height: 47px;
+	font-size: 14px;
+	padding-left: 20px;
+	margin-right: 12px;
+}
+.writeWrap h4 input{
+	float: left;
+	width: 344px;
+	height: 46px;
+	color: #333;
+	font-size: 14px;
+}
+.writeWrap h4 b{
+	color: #DCDCDC;
+	font-size: 14px;
+	cursor: pointer;
+	font-weight: normal;
+}
+.writeWrap h4 b.pitchon{
+	color: #333;
+}
+.message{
+	width: 100%;
+	height:140px;
+	margin-top:0px;
+	padding:14px;
+}
+.message h3{
+	color: #A0A0A0;
+	font-size: 14px;
+	margin-bottom: 18px;
+}
+.message .messageCont{
+	width: 100%;
+	height: 86px;
+	color: #A0A0A0;
+	border: none;
+	outline: none;
+	font-family: "microsoft yahei";
+}
+.message .messageCont::-webkit-input-placeholder{color:#DCDCDC};
+.subBtnOrder{
+	margin-bottom: 40px;
+}
+.subBtnOrder:hover{
+	background-color: #4c2e7e;
+}
+.weixin{
+	overflow: hidden;
+	margin: 30px 0 100px 45px;
+}
+.weixin img,.ipone img{
+	float: left;
+}
+.weixin .weixinCont,.ipone .weixinCont{
+	float: left;
+	margin-left:62px;
+}
+.weixinCont h6{
+	color: #333;
+	font-size: 18px;
+	margin:30px 0 12px 0;
+    font-weight: 600;
+    text-align: right;
+}
+.weixinCont p{
+	color: #333;
+	font-size: 16px;
+	line-height: 30px;
+}
+.ipone{
+	overflow: hidden;
+	padding: 0 0 104px 45px;
+}
+.choceTime{
+	right: 22px;
+	top: 36px;
+	height: 84px;
+	width: 112px;
+	display: none;
+	position: absolute;
+	background-color:#fff;
+	border: 1px solid #D1D1D1;
+	border-top: none;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.mateTime{
+	position: relative;
+}
+.choceTime ul li,.dateTime ul li{
+	color: #333;
+	height:28px;
+	cursor: pointer;
+	font-size:14px;
+	line-height:28px;
+	padding-left:8px;
+}
+.choceTime ul li:hover,.dateTime ul li:hover{
+	background-color: #f4f5f9;
+}
+.dateTime{
+	top: 36px;
+	left: 120px;
+	width:194px;
+	height: 196px;
+	overflow: hidden;
+	position: absolute;
+	background-color:#fff;
+	border: 1px solid #D1D1D1;
+	border-top: none;
+	display: none;
+	border-bottom-left-radius:4px;
+	border-bottom-right-radius:4px;
+}
+.dateTime ul li h3,.dateTime ul li h6,.dateTime ul li h5{
+	float: left;
+	font-size:14px;
+	padding-right: 6px;
+}
+.dateTime ul li h3{
+	width: 34px;
+	height: 100%;
+}
+/*//提示信息*/
+.orderReminder{
+	left: 0;
+	top: 110px;
+	color: #fff;
+	width: 100%;
+	height: 50px;
+	display: none;
+	font-size: 18px;
+	line-height: 50px; 
+	text-align: center;
+	position: absolute;
+	background-color: #5fcadb;
+}

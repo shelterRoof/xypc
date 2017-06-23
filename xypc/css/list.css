@@ -1,0 +1,500 @@
+.listSearch{
+	width: 1170px;
+	overflow: hidden;
+	margin:144px auto 0;
+}
+.searchBox{
+	width: 570px;
+	height: 60px;
+	float: left;
+	border-radius: 4px;
+	border: 2px solid #eee;
+	border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;	
+}
+.searchBox input{
+	color: #333;
+	height: 100%;
+	width: 566px;
+	float: left;
+	font-size: 20px;
+	padding-left: 12px;
+	line-height: 60px;	
+	font-family: "microsoft yahei";
+}
+#searchBtn{
+	float: left;
+	width: 100px;
+	height: 60px;
+	cursor: pointer;
+	text-align: center;
+	background-color: #6c45af;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+/*.searchBox span:hover{
+	background-color:#6c45af;
+	border-top-right-radius: 4px;
+	border-bottom-right-radius: 4px;
+}*/
+#searchBtn b{
+	width: 28px;
+	height: 28px;
+	margin-top: 15px;
+	display: inline-block;
+	background:url(../images/list/icon_wsearch.png) no-repeat center center;
+}
+/*.searchBox span:hover b{
+	background:url(../img/list/icon_wsearch.png) no-repeat center center;
+}*/
+#searchMap{
+	float: left;
+	width: 130px;
+	height: 60px;
+	color: #61BAC8;
+	font-size:20px;
+	cursor: pointer;
+	margin-left: 14px;
+	border-radius: 4px;
+	background-color: #eef7f8;	
+}
+#searchMap:hover{
+	color: #ffffff;
+	background-color: #61BAC8;	
+}
+.screenItems{
+	width: 1170px;
+	height: 76px;
+	padding-left:14px;
+	margin: 0 auto;
+	position: relative;
+}
+.screenItems > div{ 
+	float: left;
+	margin-right:36px;
+	
+}
+.screenItems > div > span{
+	float: left;
+	height: 76px;	
+	color: #333333;	
+	font-size: 16px;
+	cursor: pointer;
+	line-height: 76px;
+}
+
+.screenItems > div > span> em{
+	 font-style: inherit;
+}
+
+.screenItems > div > span > b{
+	width:14px;
+	height: 8px;
+	margin-left: 8px;
+	margin-bottom: 3px;
+	display: inline-block;
+	background:url(../images/list/icon_arrow.png) no-repeat left top;
+}
+.screenItems p{
+	float: left;
+	color: #61BAC8;	
+	font-size: 16px;
+	cursor: pointer;
+	display: none;
+	line-height: 76px;
+}
+.screenItems div ul{
+	left: 0px;
+	bottom: -70px;
+	position: absolute;
+	display: none;
+}	
+.screenItems .area>ul{
+	left: 70px;
+	bottom: -486px;
+}	
+.screenItems .station>ul{
+	width: 880px;
+	left: 0px;
+	bottom: -132px;
+	box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+
+}	
+.screenItems .rent .rentCont{
+	left: 226px;
+	bottom: -70px;
+}	
+.screenItems .toward>ul{
+	left: 434px;
+}
+.screenItems .room>ul{
+	left: 268px;
+}	
+.typeCont,.towardCont,.roomCont{
+	height: 70px;
+	padding-left:38px;
+	border-radius: 2px;	
+	background-color: #ffffff;
+	box-shadow: 0 0 6px 0px rgba(0,0,0,.2);
+}
+.typeCont li,.towardCont li,.roomCont li{
+	float: left;
+	cursor: pointer;
+	line-height:70px;
+	margin-right: 38px;
+	font-size: 16px;
+}
+.typeCont li b,.towardCont li b,.roomCont li b{
+	width: 22px;
+	float: left;
+	height: 22px;
+	margin:25px 8px 0 0;
+	border-radius: 50%;
+    border: 2px solid #eee;;
+}
+.typeCont li span{
+	float: left;
+}
+.typeCont li b.cur,.towardCont li b.cur,.roomCont li b.cur{
+	border: 6px solid #6C45AF;
+	box-shadow: none;
+}
+.screenItems div .areaPar{
+	width:248px;
+	position: absolute;
+	background-color: #fff;
+	box-shadow: 0 0 2px 1px rgba(0,0,0,.2);
+}
+.areaPar li{
+	height: 44px;
+	color: #3d3d3d;
+	padding: 0 20px;
+	font-size: 16px;
+	line-height: 44px;
+	cursor: pointer;	
+}
+.areaPar li.arr{
+	color: #6C45AF;
+}
+.areaPar li:hover{
+	background-color: #f4f5f9;
+}
+.areaPar li>b{
+	width: 8px;
+	height: 14px;
+	float: right;
+	margin-top: 15px;
+	background: url(../images/list/icon_rightarrow.png) no-repeat left center;
+}
+.areaPar li ul{
+	top: 0px;
+	left: 248px;
+	height: 484px;
+	width:248px;
+	display: none;
+	position: absolute;
+	overflow-y: auto;
+	background-color: #fff;
+	box-shadow: 0 0 2px 1px rgba(0,0,0,0.02);
+}
+.stationPar{
+	padding: 20px 0 0 20px;
+	background-color:#fff;
+}
+.stationPar li ul{
+	left: 0;
+	width: 880px;
+	height: 185px;
+	bottom: -165px;
+	overflow-y: auto;
+	position: absolute;
+	padding: 20px 0 0 20px;
+	background-color: #fff;	
+	box-shadow: 0 0 2px 1px rgba(0,0,0,.2);	
+}
+.stationPar li ul li{
+	color: #999;
+}
+.stationPar li{
+	float: left;
+	color: #333;
+	cursor: pointer;
+	font-size: 16px;
+	padding:0 30px 35px 0;
+}
+.stationPar li:hover{
+	color: #6C45AF;
+}
+.stationPar li.arr{
+	color: #6C45AF;
+}
+.rentCont{
+	width: 432px;
+	height:70px;
+	padding:12px 38px;	
+	background-color: #fff;
+	box-shadow: 0 0 6px 0px rgba(0,0,0,.2);
+}
+.rentCont li{
+	height: 100%;
+	line-height: 40px;
+	margin-top: 3px;
+}
+.rentCont div{
+	float: left;
+	width: 112px;
+	height: 40px;
+	color: #333;
+	font-size: 20px;
+	border-radius: 2px;
+	padding-left: 10px;
+	border:2px solid #EEEEEE;	
+}
+.rentCont div b{
+	float: left;
+    line-height: 36px;
+    font-weight: 100;
+}
+.rentCont div input{
+	float: left;
+    width: 79%;
+    height: 100%;
+    font-size: 20px;
+    line-height: 56px;
+}
+.rentCont span{
+	width: 14px;
+	float: left;
+	margin: 20px 10px 0 10px;
+	border: 1px solid #7d7d7d;
+}
+.rentCont button{
+	color: #fff;
+	width: 68px;
+	height: 38px;
+	cursor: pointer;
+	font-size: 20px;
+	border-radius: 2px;
+	margin-left: 20px;
+	background-color: #6C45AF;
+}
+.secendScreen{
+	width:100%;
+	height: 40px;
+	background-color: #eaebf0;
+}
+.secendScreenCont{
+	width:1170px;
+	margin: 0px auto;
+	/*padding-left: 14px;*/
+}
+.secendLeft{
+	float: left;
+	height: 36px;
+	font-size: 14px;
+	margin-top: 2px;
+}
+.secendLeft span{
+	width: 100px;
+	float: left;
+	height: 100%;
+	color: #333;
+	cursor: pointer;
+	line-height:36px;
+	text-align: center;
+}
+.secendLeft span b{
+	width:14px;
+	height:8px;
+    margin-left: 8px;
+    display: inline-block;
+	background: url(../images/list/icon_arrow_pre.png) no-repeat left top;
+}
+.secendLeft span.purple{
+	color: #6C45AF;
+	background-color: #fff;
+}
+.secendLeft span.purple b{
+	background-image:url(../images/list/icon_purplearrow.png);
+}
+.secendRight{
+	float: right;
+	margin-top: 8px;
+}
+.secendRight span{
+	width:24px;
+	height:24px;
+	float: left;
+	cursor: pointer;
+	background: url(../images/list/icon_previous_normal.png) no-repeat left top;
+}
+.secendRight .arrowLeft:hover{
+	background-image:url(../images/list/icon_previous.png);
+}
+.secendRight .arrowRight:hover{
+	background-image:url(../images/list/icon_next.png);
+}
+.secendRight .arrowRight{
+	background-image: url(../images/list/icon_next_normal.png);
+}
+.secendRight p{
+	color: #333;
+	margin: 1px 10px;
+	float: left;
+	font-size: 16px;
+}
+.secendRight p b{
+	font-weight: normal;	
+}
+.secendRight .jumpPage{
+	width: 144px;
+	float: left;
+	border-radius: 4px;
+	margin-left: 20px;
+	background-color: #eaebf0;
+}
+.secendRight .jumpPage input{
+	width: 50px;
+	height: 24px;
+	float: left;
+	font-size: 14px;
+	padding-left:10px;
+	background-color:#fff;
+	border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.secendRight .jumpPage button{
+	width: 50px;
+	color: #fff;
+	height: 24px;
+	float: left;
+	font-size: 14px;
+	cursor: pointer;
+	background-color: #bcb8c0;
+	border-top-right-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.secendRight .jumpPage button:hover{
+	background-color: rgb(97, 186, 200);
+}
+.houseList{
+	width: 100%;
+	height: 1295px;
+	overflow: hidden;
+	background-color: #F4F5F9;
+}
+.listCont{
+	width: 1170px;
+	overflow: hidden;
+	margin: 26px auto 0;
+}
+.listCont li{
+	float: left;
+	cursor: pointer;
+	margin:0 30px 30px 0;
+	border-radius: 4px;
+}
+.listCont li:hover{
+	box-shadow: 0 0 3px 3px rgba(0,0,0,.1);
+}
+.listCont li:nth-child(4n){
+	margin-right: 0px;
+}
+.listCont li img{
+	width: 270px;
+	height: 200px;
+	display: block;
+	border-top-left-radius: 4px;
+    border-top-right-radius: 4px;
+}
+.houseInfor{
+	width: 270px;
+	height: 190px;
+	background-color: #fff;
+	padding: 25px 0 0 12px;
+	border-bottom-left-radius: 4px;
+    border-bottom-right-radius: 4px;
+}
+.houseInfor p{
+	color: #333;
+	width: 100%;
+	height: 46px;
+	font-size: 18px;
+    font-weight: bold;
+}
+.houseInfor .roomid,.houseInfor .typeRent,.houseInfor .houseid{
+	display: none;
+}
+.houseInfor h2{
+	height: 40px;
+	color: #6C45AF;
+	font-size: 18px;
+	font-weight: normal;
+}
+.houseInfor h2 span,.houseInfor h2 b{
+	font-size: 24px;
+	font-weight: normal;
+}
+.houseInfor h3{
+	color: #e5e5e5;
+	height: 40px;
+	font-weight: 100;
+}
+.houseInfor h3 b{
+	color: #333;
+	font-size: 16px;
+	font-weight: 100;
+}
+.houseInfor .condition {
+	width: 100%;
+	height: 20px;
+    overflow: hidden;
+}
+.houseInfor .condition span{
+	width: 64px;
+	height: 20px;
+	float: left;
+	color: #61BAC8;
+	border-radius: 2px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 14px;
+	margin-right: 6px;
+	background-color:#eff8f9;
+}
+.belowJump{
+	width: 100%;
+	height:40px;
+	background-color:#eaebf0;
+}
+.belowJumpCont{
+	width: 1170px;
+	margin: 0 auto;
+}
+/*没有网络的情况*/
+.noNetwork{
+	display: none;
+	width: 167px;
+    margin: 0 auto;
+	height:400px;
+	background:#F4F5F9 url(../images/list/no-network.png) no-repeat center 60px;
+}
+.refresh{
+	color: #fff;
+    height: 40px;
+    width: 100px;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 4px;   
+    margin: 300px 0 0 35px;
+    background-color: #61BAC8;
+    font-family: "microsoft yahei";
+}
+.noHouse{
+	width: 340px;
+	margin:0 auto;
+	height: 400px;
+	display: none;
+	background: url(../images/list/no.png) no-repeat center 150px;
+}

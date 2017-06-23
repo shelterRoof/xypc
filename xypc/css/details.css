@@ -1,0 +1,249 @@
+h1,h2,h3,h4,h5,h6,b{
+	font-weight: normal;
+}
+.housesInfor{
+	width: 1170px;
+	height:456px;
+	margin: 140px auto 0;
+}
+.imgWrap{
+	height: 100%;
+	width: 570px;
+	float: left;
+	position: relative;
+}
+.bigImg{
+	width:100%;
+	height: 100%;
+}
+.smallImgWrap{
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height:100px;
+	position: absolute;
+	background-color:rgba(0,0,0,.2);
+}
+.smallImgFath{
+	width:505px;
+	height: 80px;
+	overflow: hidden;
+	position: absolute;
+	margin:10px 35px 0px;
+}
+.smallImg{
+	top: 0;
+	left: -75px;		
+	height: 80px;
+	width: 6000px;
+	position: absolute;
+}
+.smallImg li{
+	float: left;
+	width: 100px;
+	height: 80px;
+	cursor: pointer;
+	margin-left:10px;      
+}
+.smallImg li:nth-child(1){
+	margin-left: 0px;
+}
+.smallImg li img{
+	width: 100%;
+	height: 100%;
+}
+.smallImg li .border{
+	border: 2px solid #fff;
+}
+.smallImgWrap span{
+	width: 12px;
+	height: 22px;
+	float: left;
+	cursor: pointer;
+	margin:40px 10px 0px;
+	background:url(../images/details/icon_previous.png) no-repeat left top;
+}
+#smallRight{
+	float: right;
+	background-image: url(../images/details/icon_next.png);
+}
+/*详情信息右边*/
+.inforWrap{
+	float: left;
+	margin-left: 30px;
+}
+.inforTitle{
+	color: #333;
+	margin-bottom: 25px;
+	font-size: 20px;
+	font-family: "microsoft yahei";
+}
+.inforPrice{
+	color: #6C45AF;
+	font-size:20px;
+	margin-bottom: 20px;
+}
+#priceCont{
+	font-size: 28px;
+}
+.creditRent{
+	color: #999;
+	font-size: 18px;
+	margin-bottom: 26px;
+}
+.creditRent span{
+	cursor: pointer;
+}
+.inforWrap p{
+	width: 470px;
+	height: 1px;
+	margin-bottom: 34px;
+	background-color:#E5E5E5;
+}
+.inforLitle{
+	width: 470px;
+	overflow: hidden;
+}
+.inforLitle li{
+	float: left;
+	margin:0 42px 32px 0;
+}
+.inforLitle .noMargin{
+	margin-right: 0px;
+}
+.inforLitle li b{
+	color: #999;
+	font-size: 16px;
+}
+.inforLitle li span,.inforPlot span,.inforPlace span{
+	color: #333333;
+	font-size: 16px;
+}
+.inforPlot,.inforPlace{
+	color: #999;
+	font-size: 16px;
+	margin-bottom: 32px;
+}
+.inforPlace{
+	margin-bottom: 33px;
+}
+.make{
+	color: #fff;
+	height: 50px;
+	width: 370px;
+	cursor: pointer;
+	border-radius: 4px;
+	font-size: 18px;
+	background-color: #61BAC8;
+	font-family:"microsoft yahei";
+}
+.make:hover{
+	background-color: #57a7b4;
+}
+.cellInfor{
+	height: 60px;
+	width: 1170px;
+	margin: 40px auto;
+	/*border-bottom: 1px solid #E5E5E5;*/
+}
+.cellInfor>h2{
+	color:#333039;
+	height:40px;
+	font: 600 18px/1 "microsoft yahei";
+}
+.cellCont{
+	overflow: hidden;
+}
+.cellCont li{
+	float: left;
+	margin-right: 68px;
+}
+.cellCont li:nth-child(3n){
+	margin-right: 0;
+}
+.cellCont li b{
+	color:#999;
+	font-size:16px;
+}
+.cellCont li span{
+	color: #333;
+	font-size: 16px;
+}
+.configInfor{
+	width: 1170px;
+	margin: 0px auto;
+	overflow: hidden;
+}
+.configInfor h2{
+	color: #333039;
+	margin-bottom: 52px;
+	font: 600 32px/1 "microsoft yahei";
+}
+.configInfor li{
+	float: left;
+	width: 170px;
+	height:104px;
+	text-align: center;
+	margin:0 15px 46px;	
+}
+.configInfor li img{
+	width: 52px;
+	height: 52px;
+	margin:0 59px 20px;
+}
+.configInfor li b{
+	color: #3D3D3D;
+	font-size: 30px; 
+}
+.relatedWrap{
+	width: 100%;
+	height: 604px;
+	background-color: #F4F5F9;
+}
+.relatedCont{
+	width:1170px;
+	margin: 0 auto;
+}
+.relatedCont>h2{
+	color: #333039;
+	padding: 60px 0;
+	font: 600 32px/1.1 "microsoft yahei";
+}
+/*地图*/ 
+.mapWrap{
+	width:1200px;
+	height: 752px;
+	margin: 0px auto;
+}
+.mapWrap .mapListWrap{
+	width: 100%;
+	border-bottom: none;
+	border: 2px solid #eee;	
+	padding: 27px 0px 0px 12px;	
+}
+.mapWrap .mapListWrap h2{
+	color: #333039;
+	height: 45px;
+	font: bold 18px/1.1 "microsoft yahei";
+}
+#map {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    }
+    
+.mapList{
+	height:68px;
+	line-height: 68px;
+	overflow: hidden;
+}  
+.mapList li{
+	float: left;
+	color: #999999;
+	font-size: 14px;
+	cursor: pointer;
+	margin-right: 44px;	
+}
+.mapList li.colorPur{
+	color: #6C45AF;
+}  

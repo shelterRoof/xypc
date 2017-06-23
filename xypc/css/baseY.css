@@ -1,0 +1,55 @@
+body{
+	margin:0px;
+	padding:0px;
+	/*font:100 12px/1 "microsoft yahei";*/
+	font-family: "microsoft yahei";
+	font-size: 12px;
+}
+*{
+	box-sizing: border-box;
+}
+p,ul,li,input,h1,h2,h3,h4,h5,h6,select,span,dd,dl,dt{
+	margin:0px;
+	padding:0px;
+	list-style: none;
+}
+input,button{
+	border: none;
+	outline: none;
+}
+a{
+	color:#333;
+	display:inline-block;
+	text-decoration: none;
+}
+a:hover{
+	text-decoration:underline;
+}
+img{
+	display: block;
+}
+
+.mb {
+  margin-bottom: 15px; }
+
+.mt {
+  margin-top: 15px; }
+
+.clearfix:after {
+  content: ".";
+  display: block;
+  clear: both;
+  height: 0;
+  visibility: hidden; }
+
+.clearfix {
+  zoom: 1; }
+
+.wrapper {
+  width: 1200px;
+  margin: 0 auto; }
+@media screen and (max-width: 1200px) {
+    body {
+        width: 1300px;
+    }
+}

@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>房源列表</title>
+		<meta name="keywords" content="北京租房,信用租房,北京租房优惠,北京租房免押金,北京租房月付,北京租房网站,
+    	押金减免,房租月付,相寓,相寓HOME,相寓INN,相寓PARK,相寓业主,委托相寓,相遇,1zu,1zu.com,xiangyu"/>
+   		<meta name="description" content="相寓，伟业我爱我家旗下专业房屋资产管理品牌，脱胎于集团旗下运营
+    	了逾16年的房屋管家业务，相寓主张回归居住本身，带您进入美好租+生活"/>
+		<link rel="stylesheet" type="text/css" href="../css/baseY.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/list.css"/>
+		<script src="../js/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/default/list.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/default/port.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="icon" href="../favicon.ico"/>
+		<link rel="stylesheet" type="text/css" href="../css/common-page.css"/>
+		<script src="../js/default/header.js" type="text/javascript" charset="utf-8"></script>
+		<script src="../js/default/footer.js" type="text/javascript" charset="utf-8"></script>
+		<link rel="stylesheet"  type="text/css"  href="../css/loginReg.css"/>
+	</head>
+	<body>
+		<!--头部-->
+		
+		<h1 style="display: none;">
+		<img src="../logo.jpg" width="121" height="75" alt="相寓,相寓HOME,相寓INN,相寓PARK,相寓业主,委托相寓">
+	</h1>
+	<div class="header-fe clearfix">
+		<div class="wrapper clearfix">
+			<div class="header-left">
+				<a href="../layout/index.shtml"><img class="logo-img" src="../images/header/headerfe-logo.png" alt="相寓"/></a>
+				<!--<div class="sle-city sle-city-leave">-->
+					<!--<i class="arrow"></i>-->
+					<!--<span class="city-item">北京</span>-->
+					<!--<ul class="selcity-bto-con">-->
+						<!--<li>北京</li>-->
+						<!--<li>杭州</li>-->
+						<!--<li>苏州</li>-->
+						<!--<li>上海</li>-->
+						<!--<li>南京</li>-->
+						<!--<li>天津</li>-->
+						<!--<li>太原</li>-->
+						<!--<li>郑州</li>-->
+						<!--<li>成都</li>-->
+						<!--<li>武汉</li>-->
+					<!--</ul>-->
+				<!--</div>-->
+			</div>
+			<!--<div class="headLoginWrap">
+				<div class="notLogin">
+					<a href="javascript:void(0);" id="login">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" id="regis">注册</a>
+				</div>
+				<div class="alreadyLogin">
+					<!--<img src="../images/header/icon_user.png"/>-->
+					<!--<b></b><span id="userName">小寓123</span>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="javascript:void(0);" id="exit">退出</a>
+				</div>				
+			</div>-->
+			<ul class="header-nav">
+				<li class="nav-home">
+					<a class="nav-item  action" href="http://www.1zu.com/xiangyu/xyHome.html">相寓HOME </a>
+					<div class="border"></div>
+					
+				</li>
+				<li class="nav-park">
+					<a href="http://www.1zu.com/xiangyu/xyPark.html" class="nav-item">相寓PARK </a>
+					<div class="border"></div>
+					
+				</li>
+				
+				<li class="nav-xyzf">
+					<a class="nav-item" href="http://www.1zu.com/xiangyu/rent.html" class="nav-item">信用租房</a>
+					<div class="border"></div>
+				</li>
+				
+				
+				<!--<li><a href="../layout/相寓INN.shtml" class="nav-item">相寓INN</a></li>-->
+				<!--<a href="javascript:void(0)" class="nav-item">相寓LIFE</a>-->
+				<li class="nav-xyyz">
+					<a class="nav-item" href="http://www.1zu.com/xiangyu/owner.htm" class="nav-item">相寓业主</a>
+					<div class="border"></div>
+				</li>
+			</ul>
+			
+		</div>
+	</div>
+		<!--搜索框  以后会用到-->
+		<div class="listSearch">
+			<div class="searchBox">
+				<input type="text" name="" id="searchInput" placeholder="区域  商圈  地铁站"/>				
+			</div>
+			<span id="searchBtn"><b></b></span>	
+			<!--<button id="searchMap">地图找房</button>-->
+		</div>
+		<div class="screenItems">
+			<div class="type screeStyle">
+				<span id="rentType"><em>租房类型</em><b></b></span>
+				<ul class="typeCont screeStyChild">
+					<li>
+						<b></b>
+						<span>合租</span>					
+					</li>
+					<li>
+						<b></b>
+						<span>整租</span>					
+					</li>
+				</ul>
+			</div>
+			<div class="area screeStyle">
+				<span><em>区域选择</em><b></b></span>
+			</div>
+			<div class="station screeStyle">
+				<span><em>地铁站</em><b></b></span>
+			</div>
+			<div class="rent screeStyle">
+				<span><em>租金范围</em><b></b></span>	
+				<ul class="rentCont screeStyChild">
+					<li>
+						<div><b>￥</b><input type="text" class="rentFir"/></div>
+						<span></span>
+						<div><b>￥</b><input type="text" class="rentSec"/></div>
+						<button>确定</button>
+					</li>		
+				</ul>
+			</div>
+			<!--<div class="toward screeStyle">
+				<span><em>朝向</em><b></b></span>	
+				<ul class="towardCont">
+					<li>
+						<b></b>
+						<span>东</span>					
+					</li>
+					<li>
+						<b></b>
+						<span>南</span>					
+					</li>
+					<li>
+						<b></b>
+						<span>西</span>					
+					</li>
+					<li>
+						<b></b>
+						<span>北</span>					
+					</li>
+				</ul>
+			</div>-->
+			<div class="room screeStyle">
+				<span><em>居室</em><b></b></span>	
+				<ul class="roomCont screeStyChild">
+					<li>
+						<b></b>
+						<span>1居</span>					
+					</li>
+					<li>
+						<b></b>
+						<span>2居</span>					
+					</li>
+					<li>
+						<b></b>
+						<span>3居</span>					
+					</li>
+					<li>
+						<b></b>
+						<span>更多</span>					
+					</li>
+				</ul>
+			</div>
+			<p class="screeRemove">清除所有</p>
+		</div>
+		<div class="secendScreen">
+			<div class="secendScreenCont">
+				<div class="secendLeft">
+					<span id="defaultSort" class="purple">默认排序</span>
+					<span id="screePrice">价格排序</span>	
+					<span id="screeArea">面积排序</span>   
+				</div>
+				<div class="secendRight">
+					<span class="arrowLeft"></span>
+					<p><b class="front">1</b>/<b class="after"></b></p>
+					<span class="arrowRight"></span>
+					<!--<div class="jumpPage">
+						<input type="text" name="" class="pageNum" value="1" />
+						<button class="pageButton">跳转</button>
+					</div>-->
+				</div>
+			</div>
+		</div>
+		<div class="houseList">
+			<div class="noHouse">
+				
+			</div>
+			<div class="noNetwork">
+				<button class="refresh">刷新</button>
+			</div>
+		</div>
+		
+		<div class="belowJump">
+			<div class="belowJumpCont">
+				<div class="secendRight">
+					<span class="arrowLeft"></span>
+					<p><b class="front">1</b>/<b class="after"></b></p>
+					<span class="arrowRight"></span>
+					<div class="jumpPage">
+						<input type="text" name="" id="" value="1" class="pageNum"/>
+						<button class="pageButton">跳转</button>
+					</div>
+				</div>
+			</div>			
+		</div>	
+		<!--底部-->
+	<div class="footer">
+			<div class="footer-content clearfix">
+				<div class="wrapper">
+					<div class="footer-service">
+						<dl class="service-item">
+							<dt><a href="javascript:void(0)">关于相寓</a></dt>
+							<dd><a href="../layout/about.shtml">公司简介</a></dd>
+							<dd><a href="https://www.lagou.com/gongsi/7812.html">加入我们</a></dd>
+							<dd><a href="javascript:void(0)">联系我们</a></dd>
+							<dd><a href="xy-faq.shtml">常见问题</a></dd>
+						</dl>
+	
+						<dl class="service-item">
+							<dt><a href="javascript:void(0)">关于我们</a></dt>
+							<dd id="App"><a href="javascript:void(0)">APP下载</a></dd>
+							<dd id="service"><a href="javascript:void(0)">支付宝服务窗</a></dd>
+							<dd><a href="http://weibo.com/xiangyuzufang?refer_flag=1001030102_&is_hot=1">新浪微博</a></dd>
+							<dd id="VChat"><a href="javascript:void(0)">官方微信</a></dd>
+						</dl>
+					</div>
+					<div class="footer-code">
+						<div class="paytreasure-code">
+							<img id="app-img" src="../images/footer/App-download.png" alt="app下载" />
+							<p class="code-info">APP下载</p>
+						</div>
+						<div class="paytreasure-code">
+							<img id="service-img" src="../images/footer/paytreasure-code.png" alt="支付宝服务窗" />
+							<p class="code-info">支付宝服务窗</p>
+						</div>
+						<div class="wechat-code">
+							<img id="vchat-img" src="../images/footer/wechat-code.png" alt="官方微信" />
+							<p class="code-info">官方微信</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="copyright-text">
+				<p>Copyright © 2017, Beijing AJY Business Management Co., Ltd.北京爱家营企业管理有限公司</p>
+				<p>京ICP备15031018号-1</p>
+			</div>
+		</div>
+	</body>
+</html>

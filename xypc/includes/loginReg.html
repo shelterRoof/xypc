@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+		<title>登录/注册</title>
+		<link rel="stylesheet" type="text/css" href="../css/baseY.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/loginReg.css"/>
+	</head>
+	<body>
+		
+		<div class="detailCover">
+			<div class="orderReminder"></div>			
+			<!--登录/注册-->
+			<div class="loSinWrap">
+				<div class="registWrap">
+					<h2 class="login present">登录</h2>
+					<h2 class="regist">注册</h2>
+					<p class="resetPassword">重置密码</p>
+				</div>
+				<!--登录-->
+				<form action="" class="inputLogWrap">
+					<h3><span>手机号</span><input type="text" value="" id="loginPhone"/></h3>
+					<h3><span>密码</span><input type="text" value="" placeholder="英文数字组合不少于8位" id="loginPassword"/></h3>	
+					<button class="loginBtn">登录</button>
+					<p class="forgotPassword">忘记密码？</p>
+				</form>
+				<!--注册-->
+				<form action="" method="post" class="inputRegWrap">					
+					<h4><span>手机号</span><input type="text" value="" id="regPhone"/></h4>
+					<h4><span>验证码</span><input type="text" value="" class="shortWid"/><b class="code">获取</b> </h4>	
+					<h4><span>密码</span><input type="text" placeholder="英文数字组合不少于8位" id="regPassword"/></h4>	
+					<button class="registBtn">注册</button>					
+				</form>	
+				<!--重置-->
+				<form action="" method="post" class="inputResWrap">					
+					<h4><span>手机号</span><input type="text" value="" id="resPhone"/></h4>
+					<h4><span>验证码</span><input type="text" value="" class="shortWid"/><b class="code">获取</b> </h4>	
+					<h4><span>密码</span><input type="text" placeholder="英文数字组合不少于8位" id="resPassword"/></h4>	
+					<button class="resLoginBtn">登录</button>					
+				</form>
+			</div>
+			<!--预约看房-->
+			<div class="orderWrap">
+				<div class="wordWrap">
+					<h2 class="present writeInfor">填写约看信息</h2>
+					<h2 class="lookSwitch">查看我的约看</h2>					
+				</div>
+				<form action="" method="post" class="writeWrap">
+					<h4><span>您的姓名</span><input type="text" value="" id="orderUsername"/></h4>
+					<h4 class="orderGender"><span>您的称呼</span> <b class="pitchon">先生</b>&nbsp;&nbsp;/&nbsp;&nbsp;<b>女士</b></h4>
+					<h4><span>您的电话</span><input type="text" value="" id="orderPhone"/></h4>
+					<h4 class="mateTime"><span>期望看房时间</span>
+						<p class="week"></p>
+						<div class="dateTime">							
+						</div>
+						<p class="afterChice">下午</p>
+						<div class="choceTime">
+							<ul>
+								<li>上午 </li>
+								<li>下午</li>
+								<li>晚上</li>								
+							</ul>
+						</div>
+					</h4>
+					
+					<div class="message">
+						<h3>给经纪人留言（选填）：</h3>
+						<textarea class="messageCont" placeholder="您可在此备注您的选房需求，以便经纪人为您推荐房源。"></textarea>
+					</div>
+					<button class="subBtnOrder">提交约看信息</button>
+				</form>
+				<div class="checkSee">
+					<div class="weixin">
+						<img src="../images/details/wechat.png"/>
+						<div class="weixinCont">
+							<h6>相寓微信公众号</h6>
+							<p>公众号底部栏“相寓租客”里<br/>&nbsp;&nbsp;&nbsp;&nbsp;找到“我的约看”即可查看</p>
+						</div>
+					</div>
+					<div class="ipone">
+						<img src="../images/details/App-download.png"/>
+						<div class="weixinCont">
+							<h6>相寓APP</h6>
+							<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;下载相寓App<br/>更便捷的查看房源及约看信息</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!--预约看房-->
+		</div>	
+	</body>
+</html>
+<script src="../js/jquery/jquery.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/default/details.js" type="text/javascript" charset="utf-8"></script>
+<script src="../js/default/header.js" type="text/javascript" charset="utf-8"></script>
